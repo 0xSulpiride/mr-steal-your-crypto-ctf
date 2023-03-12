@@ -109,8 +109,8 @@ contract SafuVault is ERC20, Ownable, ReentrancyGuard {
 
     /// @dev deposit funds into the system for other user
     function depositFor(
-        address token, 
-        uint256 _amount, 
+        address token,
+        uint256 _amount,
         address user
     ) public {
         strategy.beforeDeposit();
